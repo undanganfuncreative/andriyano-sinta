@@ -26,10 +26,10 @@
     };
     for (var b = document.getElementsByClassName("gift-container"), L = 0; L < b.length; L++) b[L].style.display = "none";
     for (var E = document.getElementsByClassName("btn-gift"), x = function(e) {
-        E[e].onclick = function() {
-            showGift(e)
-        }
-    }, T = 0; T < E.length; T++) x(T);
+            E[e].onclick = function() {
+                showGift(e)
+            }
+        }, T = 0; T < E.length; T++) x(T);
     var M = document.getElementById("lightboxWrapper"),
         B = document.getElementById("lightboxCloseBtn"),
         I = document.getElementById("lightboxNextBtn"),
@@ -47,10 +47,10 @@
         M.classList.remove("show"), H.innerHTML = "", window.addEventListener(ce[V].down, ye, !1)
     };
     for (var k = function(e) {
-        S[e].onclick = function() {
-            showLightbox(e)
-        }
-    }, q = 0; q < S.length; q++) k(q);
+            S[e].onclick = function() {
+                showLightbox(e)
+            }
+        }, q = 0; q < S.length; q++) k(q);
     B.onclick = function() {
         closeLightbox()
     };
@@ -141,40 +141,47 @@
         };
     ie();
     var se = function() {
-        ie(), le = le < ee.length - 1 ? le + 1 : 0, re(le, !1), me()
-    }, re = function(e) {
-        var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
-        ie(), t && ge();
-        var n = oe.offsetWidth - oe.scrollWidth;
-        ee[e].style.display = "", te[e].classList.add("active");
-        var o = ne.offsetWidth / 2 - ae / 2 - te[e].offsetLeft;
-        oe.style.transform = "translateX(".concat(o > 0 ? 0 : o < n ? n : o, "px)"), le = e
-    }, ce = {
-        mouse: {
-            down: "mousedown",
-            move: "mousemove",
-            up: "mouseup"
+            ie(), le = le < ee.length - 1 ? le + 1 : 0, re(le, !1), me()
         },
-        touch: {
-            down: "touchstart",
-            move: "touchmove",
-            up: "touchend"
-        }
-    }, de = 0,
+        re = function(e) {
+            var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1];
+            ie(), t && ge();
+            var n = oe.offsetWidth - oe.scrollWidth;
+            ee[e].style.display = "", te[e].classList.add("active");
+            var o = ne.offsetWidth / 2 - ae / 2 - te[e].offsetLeft;
+            oe.style.transform = "translateX(".concat(o > 0 ? 0 : o < n ? n : o, "px)"), le = e
+        },
+        ce = {
+            mouse: {
+                down: "mousedown",
+                move: "mousemove",
+                up: "mouseup"
+            },
+            touch: {
+                down: "touchstart",
+                move: "touchmove",
+                up: "touchend"
+            }
+        },
+        de = 0,
         ue = function(e) {
             var t = $() ? e.touches[0].clientY : e.clientY;
             de - 50 > t && (ge(), se()), de < t - 50 && (ie(), re(le = le > 0 ? le - 1 : le), me(), ge())
-        }, me = function(e) {
+        },
+        me = function(e) {
             window.removeEventListener(ce[V].move, ue, !1)
-        }, ye = function(e) {
+        },
+        ye = function(e) {
             e.cancelable && e.preventDefault(), de = $() ? e.touches[0].clientY : e.clientY, window.addEventListener(ce[V].up, me, !1), window.addEventListener(ce[V].move, ue, !1)
-        }, pe = document.getElementById("btnAutoplay"),
+        },
+        pe = document.getElementById("btnAutoplay"),
         fe = !1,
         ve = function() {
             fe || (fe = !0, autoPlay = setInterval((function() {
                 se()
             }), 15e3), pe.classList.add("playing"))
-        }, ge = function() {
+        },
+        ge = function() {
             fe && (fe = !1, clearInterval(autoPlay), pe.classList.remove("playing"))
         };
     pe.addEventListener("click", (function(e) {
@@ -183,7 +190,8 @@
         document.documentElement.requestFullscreen ? document.documentElement.requestFullscreen() : document.documentElement.webkitRequestFullscreen ? document.documentElement.webkitRequestFullscreen() : document.documentElement.msRequestFullscreen && document.documentElement.msRequestFullscreen()
     };
     for (var he = !1, we = function(e) {
-        if (he = !0) for (var t = 0; t < be.length; t++) be[t].classList.add("d-none");
-        playMusic(!0), ve(), -1 != navigator.userAgent.indexOf("UCBrowser") || -1 != navigator.userAgent.indexOf("MiuiBrowser") || navigator.userAgent.includes("OppoBrowser") || navigator.userAgent.includes("HeyTapBrowser") ? console.log("Browser not support portrait full screen mode") : openFullScreen(), document.querySelector(".not-open").classList.remove("not-open"), window.addEventListener(ce[V].down, ye, !1), se()
-    }, be = document.getElementsByClassName("btn-open-invitation"), Le = 0; Le < be.length; Le++) be[Le].addEventListener("click", we, !1)
+            if (he = !0)
+                for (var t = 0; t < be.length; t++) be[t].classList.add("d-none");
+            playMusic(!0), ve(), -1 != navigator.userAgent.indexOf("UCBrowser") || -1 != navigator.userAgent.indexOf("MiuiBrowser") || navigator.userAgent.includes("OppoBrowser") || navigator.userAgent.includes("HeyTapBrowser") ? console.log("Browser not support portrait full screen mode") : openFullScreen(), document.querySelector(".not-open").classList.remove("not-open"), window.addEventListener(ce[V].down, ye, !1), se()
+        }, be = document.getElementsByClassName("btn-open-invitation"), Le = 0; Le < be.length; Le++) be[Le].addEventListener("click", we, !1)
 })();
