@@ -1,4 +1,4 @@
-(() = > {
+(() => {
     var e, t, n, o, a, l, i, s, r = document.getElementById("satuMomen"),
         c = document.documentElement.lang,
         d = document.getElementById("loader");

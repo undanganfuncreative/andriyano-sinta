@@ -1,10 +1,10 @@
 /*! For license information please see theme-app.js.LICENSE.txt */
-(() = > {
+(() => {
     var t = {
-        9669: (t, e, n) = > {
+        9669: (t, e, n) => {
             t.exports = n(1609)
         },
-        5448: (t, e, n) = > {
+        5448: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = n(6026),
@@ -63,7 +63,7 @@
                 }))
             }
         },
-        1609: (t, e, n) = > {
+        1609: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = n(1849),
@@ -83,7 +83,7 @@
             }, u.spread = n(8713), u.isAxiosError = n(6268), t.exports = u, t.exports.
             default = u
         },
-        5263: t = > {
+        5263: t => {
             "use strict";
 
             function e(t) {
@@ -93,7 +93,7 @@
                 return "Cancel" + (this.message ? ": " + this.message : "")
             }, e.prototype.__CANCEL__ = !0, t.exports = e
         },
-        4972: (t, e, n) = > {
+        4972: (t, e, n) => {
             "use strict";
             var r = n(5263);
 
@@ -120,13 +120,13 @@
                 }
             }, t.exports = o
         },
-        6502: t = > {
+        6502: t => {
             "use strict";
             t.exports = function(t) {
                 return !(!t || !t.__CANCEL__)
             }
         },
-        321: (t, e, n) = > {
+        321: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = n(5327),
@@ -200,7 +200,7 @@
                 }
             })), t.exports = l
         },
-        782: (t, e, n) = > {
+        782: (t, e, n) => {
             "use strict";
             var r = n(4867);
 
@@ -222,7 +222,7 @@
                 }))
             }, t.exports = o
         },
-        4097: (t, e, n) = > {
+        4097: (t, e, n) => {
             "use strict";
             var r = n(1793),
                 o = n(7303);
@@ -230,7 +230,7 @@
                 return t && !r(e) ? o(t, e) : e
             }
         },
-        5061: (t, e, n) = > {
+        5061: (t, e, n) => {
             "use strict";
             var r = n(481);
             t.exports = function(t, e, n, o, i) {
@@ -238,7 +238,7 @@
                 return r(a, e, n, o, i)
             }
         },
-        3572: (t, e, n) = > {
+        3572: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = n(8527),
@@ -258,7 +258,7 @@
                 }))
             }
         },
-        481: t = > {
+        481: t => {
             "use strict";
             t.exports = function(t, e, n, r, o) {
                 return t.config = e, n && (t.code = n), t.request = r, t.response = o, t.isAxiosError = !0, t.toJSON = function() {
@@ -277,7 +277,7 @@
                 }, t
             }
         },
-        7185: (t, e, n) = > {
+        7185: (t, e, n) => {
             "use strict";
             var r = n(4867);
             t.exports = function(t, e) {
@@ -307,7 +307,7 @@
                 return r.forEach(f, c), n
             }
         },
-        6026: (t, e, n) = > {
+        6026: (t, e, n) => {
             "use strict";
             var r = n(5061);
             t.exports = function(t, e, n) {
@@ -315,7 +315,7 @@
                 n.status && o && !o(n.status) ? e(r("Request failed with status code " + n.status, n.config, null, n.request, n)) : t(n)
             }
         },
-        8527: (t, e, n) = > {
+        8527: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = n(5655);
@@ -326,7 +326,7 @@
                 })), t
             }
         },
-        5655: (t, e, n) = > {
+        5655: (t, e, n) => {
             "use strict";
             var r = n(4155),
                 o = n(4867),
@@ -390,7 +390,7 @@
                 l.headers[t] = o.merge(s)
             })), t.exports = l
         },
-        1849: t = > {
+        1849: t => {
             "use strict";
             t.exports = function(t, e) {
                 return function() {
@@ -399,7 +399,7 @@
                 }
             }
         },
-        5327: (t, e, n) = > {
+        5327: (t, e, n) => {
             "use strict";
             var r = n(4867);
 
@@ -425,13 +425,13 @@
                 return t
             }
         },
-        7303: t = > {
+        7303: t => {
             "use strict";
             t.exports = function(t, e) {
                 return e ? t.replace(/\/+$/, "") + "/" + e.replace(/^\/+/, "") : t
             }
         },
-        4372: (t, e, n) = > {
+        4372: (t, e, n) => {
             "use strict";
             var r = n(4867);
             t.exports = r.isStandardBrowserEnv() ? {
@@ -454,19 +454,19 @@
                 remove: function() {}
             }
         },
-        1793: t = > {
+        1793: t => {
             "use strict";
             t.exports = function(t) {
                 return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(t)
             }
         },
-        6268: t = > {
+        6268: t => {
             "use strict";
             t.exports = function(t) {
                 return "object" == typeof t && !0 === t.isAxiosError
             }
         },
-        7985: (t, e, n) = > {
+        7985: (t, e, n) => {
             "use strict";
             var r = n(4867);
             t.exports = r.isStandardBrowserEnv() ? function() {
@@ -495,7 +495,7 @@
                 return !0
             }
         },
-        6016: (t, e, n) = > {
+        6016: (t, e, n) => {
             "use strict";
             var r = n(4867);
             t.exports = function(t, e) {
@@ -504,7 +504,7 @@
                 }))
             }
         },
-        4109: (t, e, n) = > {
+        4109: (t, e, n) => {
             "use strict";
             var r = n(4867),
                 o = ["age", "authorization", "content-length", "content-type", "etag", "expires", "from", "host", "if-modified-since", "if-unmodified-since", "last-modified", "location", "max-forwards", "proxy-authorization", "referer", "retry-after", "user-agent"];
@@ -518,7 +518,7 @@
                 })), a) : a
             }
         },
-        8713: t = > {
+        8713: t => {
             "use strict";
             t.exports = function(t) {
                 return function(e) {
@@ -526,7 +526,7 @@
                 }
             }
         },
-        4875: (t, e, n) = > {
+        4875: (t, e, n) => {
             "use strict";
             var r = n(8593),
                 o = {};
@@ -571,7 +571,7 @@
                 validators: o
             }
         },
-        4867: (t, e, n) = > {
+        4867: (t, e, n) => {
             "use strict";
             var r = n(1849),
                 o = Object.prototype.toString;
@@ -662,13 +662,13 @@
                 }
             }
         },
-        7333: (t, e, n) = > {
+        7333: (t, e, n) => {
             window._ = n(6486), window.axios = n(9669), window.axios.defaults.headers.common["X-Requested-With"] = "XMLHttpRequest"
         },
-        4556: (t, e, n) = > {
+        4556: (t, e, n) => {
             "use strict";
             n.d(e, {
-                Z: () = > i
+                Z: () => i
             });
             var r = n(1519),
                 o = n.n(r)()((function(t) {
@@ -677,7 +677,7 @@
             o.push([t.id, "#noty_layout__bottom,#noty_layout__bottomCenter,#noty_layout__bottomLeft,#noty_layout__bottomRight,#noty_layout__center,#noty_layout__centerLeft,#noty_layout__centerRight,#noty_layout__top,#noty_layout__topCenter,#noty_layout__topLeft,#noty_layout__topRight,.noty_layout_mixin{-webkit-font-smoothing:subpixel-antialiased;backface-visibility:hidden;filter:blur(0);-webkit-filter:blur(0);margin:0;max-width:90%;padding:0;position:fixed;transform:translateZ(0) scale(1);z-index:9999999}#noty_layout__top{left:5%;top:0;width:90%}#noty_layout__topLeft{left:20px;top:20px;width:325px}#noty_layout__topCenter{left:50%;top:5%;transform:translate(calc(-50% - .5px)) translateZ(0) scale(1);width:325px}#noty_layout__topRight{right:20px;top:20px;width:325px}#noty_layout__bottom{bottom:0;left:5%;width:90%}#noty_layout__bottomLeft{bottom:20px;left:20px;width:325px}#noty_layout__bottomCenter{bottom:5%;left:50%;transform:translate(calc(-50% - .5px)) translateZ(0) scale(1);width:325px}#noty_layout__bottomRight{bottom:20px;right:20px;width:325px}#noty_layout__center{left:50%;top:50%;transform:translate(calc(-50% - .5px),calc(-50% - .5px)) translateZ(0) scale(1);width:325px}#noty_layout__centerLeft{left:20px}#noty_layout__centerLeft,#noty_layout__centerRight{top:50%;transform:translateY(calc(-50% - .5px)) translateZ(0) scale(1);width:325px}#noty_layout__centerRight{right:20px}.noty_progressbar{display:none}.noty_has_timeout .noty_progressbar{background-color:#646464;bottom:0;display:block;filter:alpha(opacity=10);height:3px;left:0;opacity:.2;position:absolute;width:100%}.noty_bar{-webkit-font-smoothing:subpixel-antialiased;-webkit-backface-visibility:hidden;overflow:hidden;transform:translate(0) scale(1)}.noty_effects_open{animation:noty_anim_in .5s cubic-bezier(.68,-.55,.265,1.55);animation-fill-mode:forwards;opacity:0;transform:translate(50%)}.noty_effects_close{animation:noty_anim_out .5s cubic-bezier(.68,-.55,.265,1.55);animation-fill-mode:forwards}.noty_fix_effects_height{animation:noty_anim_height 75ms ease-out}.noty_close_with_click{cursor:pointer}.noty_close_button{background-color:rgba(0,0,0,.05);border-radius:2px;cursor:pointer;font-weight:700;height:20px;line-height:20px;position:absolute;right:2px;text-align:center;top:2px;transition:all .2s ease-out;width:20px}.noty_close_button:hover{background-color:rgba(0,0,0,.1)}.noty_modal{background-color:#000;height:100%;left:0;opacity:.3;position:fixed;top:0;width:100%;z-index:10000}.noty_modal.noty_modal_open{animation:noty_modal_in .3s ease-out;opacity:0}.noty_modal.noty_modal_close{animation:noty_modal_out .3s ease-out;animation-fill-mode:forwards}@keyframes noty_modal_in{to{opacity:.3}}@keyframes noty_modal_out{to{opacity:0}}@keyframes noty_anim_in{to{opacity:1;transform:translate(0)}}@keyframes noty_anim_out{to{opacity:0;transform:translate(50%)}}@keyframes noty_anim_height{to{height:0}}.noty_theme__relax.noty_bar{border-radius:2px;margin:4px 0;overflow:hidden;position:relative}.noty_theme__relax.noty_bar .noty_body{padding:10px}.noty_theme__relax.noty_bar .noty_buttons{border-top:1px solid #e7e7e7;padding:5px 10px}.noty_theme__relax.noty_type__alert,.noty_theme__relax.noty_type__notification{background-color:#fff;border:1px solid #dedede;color:#444}.noty_theme__relax.noty_type__warning{background-color:#ffeaa8;border:1px solid #ffc237;color:#826200}.noty_theme__relax.noty_type__warning .noty_buttons{border-color:#dfaa30}.noty_theme__relax.noty_type__error{background-color:#ff8181;border:1px solid #e25353;color:#fff}.noty_theme__relax.noty_type__error .noty_buttons{border-color:darkred}.noty_theme__relax.noty_type__info,.noty_theme__relax.noty_type__information{background-color:#78c5e7;border:1px solid #3badd6;color:#fff}.noty_theme__relax.noty_type__info .noty_buttons,.noty_theme__relax.noty_type__information .noty_buttons{border-color:#0b90c4}.noty_theme__relax.noty_type__success{background-color:#bcf5bc;border:1px solid #7cdd77;color:#006400}.noty_theme__relax.noty_type__success .noty_buttons{border-color:#50c24e}.noty_theme__metroui.noty_bar{box-shadow:0 0 5px 0 rgba(0,0,0,.298);margin:4px 0;overflow:hidden;position:relative}.noty_theme__metroui.noty_bar .noty_progressbar{background-color:#000;bottom:0;filter:alpha(opacity=20);height:3px;left:0;opacity:.2;position:absolute;width:100%}.noty_theme__metroui.noty_bar .noty_body{font-size:14px;padding:1.25em}.noty_theme__metroui.noty_bar .noty_buttons{padding:0 10px .5em}.noty_theme__metroui.noty_type__alert,.noty_theme__metroui.noty_type__notification{background-color:#fff;color:#1d1d1d}.noty_theme__metroui.noty_type__warning{background-color:#fa6800;color:#fff}.noty_theme__metroui.noty_type__error{background-color:#ce352c;color:#fff}.noty_theme__metroui.noty_type__info,.noty_theme__metroui.noty_type__information{background-color:#1ba1e2;color:#fff}.noty_theme__metroui.noty_type__success{background-color:#60a917;color:#fff}.noty_theme__mint.noty_bar{border-radius:2px;margin:4px 0;overflow:hidden;position:relative}.noty_theme__mint.noty_bar .noty_body{font-size:14px;padding:10px}.noty_theme__mint.noty_bar .noty_buttons{padding:10px}.noty_theme__mint.noty_type__alert,.noty_theme__mint.noty_type__notification{background-color:#fff;border-bottom:1px solid #d1d1d1;color:#2f2f2f}.noty_theme__mint.noty_type__warning{background-color:#ffae42;border-bottom:1px solid #e89f3c;color:#fff}.noty_theme__mint.noty_type__error{background-color:#de636f;border-bottom:1px solid #ca5a65;color:#fff}.noty_theme__mint.noty_type__info,.noty_theme__mint.noty_type__information{background-color:#7f7eff;border-bottom:1px solid #7473e8;color:#fff}.noty_theme__mint.noty_type__success{background-color:#afc765;border-bottom:1px solid #a0b55c;color:#fff}.noty_theme__sunset.noty_bar{border-radius:2px;margin:4px 0;overflow:hidden;position:relative}.noty_theme__sunset.noty_bar .noty_body{font-size:14px;padding:10px;text-shadow:1px 1px 1px rgba(0,0,0,.1)}.noty_theme__sunset.noty_bar .noty_buttons{padding:10px}.noty_theme__sunset.noty_type__alert,.noty_theme__sunset.noty_type__notification{background-color:#073b4c;color:#fff}.noty_theme__sunset.noty_type__alert .noty_progressbar,.noty_theme__sunset.noty_type__notification .noty_progressbar{background-color:#fff}.noty_theme__sunset.noty_type__warning{background-color:#ffd166;color:#fff}.noty_theme__sunset.noty_type__error{background-color:#ef476f;color:#fff}.noty_theme__sunset.noty_type__error .noty_progressbar{opacity:.4}.noty_theme__sunset.noty_type__info,.noty_theme__sunset.noty_type__information{background-color:#118ab2;color:#fff}.noty_theme__sunset.noty_type__info .noty_progressbar,.noty_theme__sunset.noty_type__information .noty_progressbar{opacity:.6}.noty_theme__sunset.noty_type__success{background-color:#06d6a0;color:#fff}.noty_theme__bootstrap-v3.noty_bar{border:1px solid transparent;border-radius:4px;margin:4px 0;overflow:hidden;position:relative}.noty_theme__bootstrap-v3.noty_bar .noty_body{padding:15px}.noty_theme__bootstrap-v3.noty_bar .noty_buttons{padding:10px}.noty_theme__bootstrap-v3.noty_bar .noty_close_button{background:transparent;color:#000;filter:alpha(opacity=20);font-size:21px;font-weight:700;line-height:1;opacity:.2;text-shadow:0 1px 0 #fff}.noty_theme__bootstrap-v3.noty_bar .noty_close_button:hover{background:transparent;cursor:pointer;filter:alpha(opacity=50);opacity:.5;text-decoration:none}.noty_theme__bootstrap-v3.noty_type__alert,.noty_theme__bootstrap-v3.noty_type__notification{background-color:#fff;color:inherit}.noty_theme__bootstrap-v3.noty_type__warning{background-color:#fcf8e3;border-color:#faebcc;color:#8a6d3b}.noty_theme__bootstrap-v3.noty_type__error{background-color:#f2dede;border-color:#ebccd1;color:#a94442}.noty_theme__bootstrap-v3.noty_type__info,.noty_theme__bootstrap-v3.noty_type__information{background-color:#d9edf7;border-color:#bce8f1;color:#31708f}.noty_theme__bootstrap-v3.noty_type__success{background-color:#dff0d8;border-color:#d6e9c6;color:#3c763d}.noty_theme__bootstrap-v4.noty_bar{border:1px solid transparent;border-radius:.25rem;margin:4px 0;overflow:hidden;position:relative}.noty_theme__bootstrap-v4.noty_bar .noty_body{padding:.75rem 1.25rem}.noty_theme__bootstrap-v4.noty_bar .noty_buttons{padding:10px}.noty_theme__bootstrap-v4.noty_bar .noty_close_button{background:transparent;color:#000;filter:alpha(opacity=20);font-size:1.5rem;font-weight:700;line-height:1;opacity:.5;text-shadow:0 1px 0 #fff}.noty_theme__bootstrap-v4.noty_bar .noty_close_button:hover{background:transparent;cursor:pointer;filter:alpha(opacity=50);opacity:.75;text-decoration:none}.noty_theme__bootstrap-v4.noty_type__alert,.noty_theme__bootstrap-v4.noty_type__notification{background-color:#fff;color:inherit}.noty_theme__bootstrap-v4.noty_type__warning{background-color:#fcf8e3;border-color:#faebcc;color:#8a6d3b}.noty_theme__bootstrap-v4.noty_type__error{background-color:#f2dede;border-color:#ebccd1;color:#a94442}.noty_theme__bootstrap-v4.noty_type__info,.noty_theme__bootstrap-v4.noty_type__information{background-color:#d9edf7;border-color:#bce8f1;color:#31708f}.noty_theme__bootstrap-v4.noty_type__success{background-color:#dff0d8;border-color:#d6e9c6;color:#3c763d}.noty_theme__semanticui.noty_bar{border:1px solid transparent;border-radius:.28571429rem;box-shadow:inset 0 0 0 1px rgba(34,36,38,.22),0 0 0 0 transparent;font-size:1em;margin:4px 0;overflow:hidden;position:relative}.noty_theme__semanticui.noty_bar .noty_body{line-height:1.4285em;padding:1em 1.5em}.noty_theme__semanticui.noty_bar .noty_buttons{padding:10px}.noty_theme__semanticui.noty_type__alert,.noty_theme__semanticui.noty_type__notification{background-color:#f8f8f9;color:rgba(0,0,0,.87)}.noty_theme__semanticui.noty_type__warning{background-color:#fffaf3;box-shadow:inset 0 0 0 1px #c9ba9b,0 0 0 0 transparent;color:#573a08}.noty_theme__semanticui.noty_type__error{background-color:#fff6f6;box-shadow:inset 0 0 0 1px #e0b4b4,0 0 0 0 transparent;color:#9f3a38}.noty_theme__semanticui.noty_type__info,.noty_theme__semanticui.noty_type__information{background-color:#f8ffff;box-shadow:inset 0 0 0 1px #a9d5de,0 0 0 0 transparent;color:#276f86}.noty_theme__semanticui.noty_type__success{background-color:#fcfff5;box-shadow:inset 0 0 0 1px #a3c293,0 0 0 0 transparent;color:#2c662d}.noty_theme__nest.noty_bar{border-radius:2px;box-shadow:5px 4px 10px 0 rgba(0,0,0,.098);margin:0 0 15px;overflow:hidden;position:relative}.noty_theme__nest.noty_bar .noty_body{font-size:14px;padding:10px;text-shadow:1px 1px 1px rgba(0,0,0,.1)}.noty_theme__nest.noty_bar .noty_buttons{padding:10px}.noty_layout .noty_theme__nest.noty_bar{z-index:5}.noty_layout .noty_theme__nest.noty_bar:nth-child(2){margin-left:4px;margin-right:-4px;margin-top:4px;position:absolute;top:0;width:100%;z-index:4}.noty_layout .noty_theme__nest.noty_bar:nth-child(3){margin-left:8px;margin-right:-8px;margin-top:8px;position:absolute;top:0;width:100%;z-index:3}.noty_layout .noty_theme__nest.noty_bar:nth-child(4){margin-left:12px;margin-right:-12px;margin-top:12px;position:absolute;top:0;width:100%;z-index:2}.noty_layout .noty_theme__nest.noty_bar:nth-child(5){margin-left:16px;margin-right:-16px;margin-top:16px;position:absolute;top:0;width:100%;z-index:1}.noty_layout .noty_theme__nest.noty_bar:nth-child(n+6){margin-left:20px;margin-right:-20px;margin-top:20px;position:absolute;top:0;width:100%;z-index:-1}#noty_layout__bottomLeft .noty_theme__nest.noty_bar:nth-child(2),#noty_layout__topLeft .noty_theme__nest.noty_bar:nth-child(2){margin-left:-4px;margin-right:4px;margin-top:4px}#noty_layout__bottomLeft .noty_theme__nest.noty_bar:nth-child(3),#noty_layout__topLeft .noty_theme__nest.noty_bar:nth-child(3){margin-left:-8px;margin-right:8px;margin-top:8px}#noty_layout__bottomLeft .noty_theme__nest.noty_bar:nth-child(4),#noty_layout__topLeft .noty_theme__nest.noty_bar:nth-child(4){margin-left:-12px;margin-right:12px;margin-top:12px}#noty_layout__bottomLeft .noty_theme__nest.noty_bar:nth-child(5),#noty_layout__topLeft .noty_theme__nest.noty_bar:nth-child(5){margin-left:-16px;margin-right:16px;margin-top:16px}#noty_layout__bottomLeft .noty_theme__nest.noty_bar:nth-child(n+6),#noty_layout__topLeft .noty_theme__nest.noty_bar:nth-child(n+6){margin-left:-20px;margin-right:20px;margin-top:20px}.noty_theme__nest.noty_type__alert,.noty_theme__nest.noty_type__notification{background-color:#073b4c;color:#fff}.noty_theme__nest.noty_type__alert .noty_progressbar,.noty_theme__nest.noty_type__notification .noty_progressbar{background-color:#fff}.noty_theme__nest.noty_type__warning{background-color:#ffd166;color:#fff}.noty_theme__nest.noty_type__error{background-color:#ef476f;color:#fff}.noty_theme__nest.noty_type__error .noty_progressbar{opacity:.4}.noty_theme__nest.noty_type__info,.noty_theme__nest.noty_type__information{background-color:#118ab2;color:#fff}.noty_theme__nest.noty_type__info .noty_progressbar,.noty_theme__nest.noty_type__information .noty_progressbar{opacity:.6}.noty_theme__nest.noty_type__success{background-color:#06d6a0;color:#fff}", ""]);
             const i = o
         },
-        1519: t = > {
+        1519: t => {
             "use strict";
             t.exports = function(t) {
                 var e = [];
@@ -4202,7 +4202,7 @@
                 }.call(e, n, e, t)) === o || (t.exports = r)
             }.call(this)
         },
-        4155: t = > {
+        4155: t => {
             var e, n, r = t.exports = {};
 
             function o() {
@@ -4288,7 +4288,7 @@
                 return 0
             }
         },
-        3379: (t, e, n) = > {
+        3379: (t, e, n) => {
             "use strict";
             var r, o = function() {
                 return void 0 === r && (r = Boolean(window && document && document.all && !window.atob)), r
@@ -4416,10 +4416,10 @@
                 }
             }
         },
-        3548: (t, e, n) = > {
+        3548: (t, e, n) => {
             "use strict";
             n.d(e, {
-                Z: () = > o
+                Z: () => o
             });
             const r = {};
             const o = (0, n(1900).Z)(r, (function() {
@@ -4439,7 +4439,7 @@
                 }, [t._v("Mempersiapkan Data")])])])
             }], !1, null, null, null).exports
         },
-        7674: (t, e, n) = > {
+        7674: (t, e, n) => {
             "use strict";
 
             function r(t) {
@@ -4470,7 +4470,7 @@
                 }) : t[e] = n, t
             }
             n.d(e, {
-                Z: () = > u
+                Z: () => u
             });
             const i = {
                 name: "ButtonDropdown",
@@ -5359,7 +5359,7 @@
                 })), 0)], 1)
             }), [], !1, null, null, null).exports
         },
-        1900: (t, e, n) = > {
+        1900: (t, e, n) => {
             "use strict";
 
             function r(t, e, n, r, o, i, a, s) {
@@ -5384,13 +5384,13 @@
                 }
             }
             n.d(e, {
-                Z: () = > r
+                Z: () => r
             })
         },
-        538: (t, e, n) = > {
+        538: (t, e, n) => {
             "use strict";
             n.d(e, {
-                ZP: () = > nr
+                ZP: () => nr
             });
             var r = Object.freeze({}),
                 o = Array.isArray;
@@ -11042,7 +11042,7 @@
                 })
             }])
         },
-        8593: t = > {
+        8593: t => {
             "use strict";
             t.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}')
         }
@@ -11058,13 +11058,13 @@
         };
         return t[r].call(i.exports, i, i.exports, n), i.loaded = !0, i.exports
     }
-    n.n = t = > {
-        var e = t && t.__esModule ? () = > t.
-        default : () = > t;
+    n.n = t => {
+        var e = t && t.__esModule ? () => t.
+        default : () => t;
         return n.d(e, {
             a: e
         }), e
-    }, n.d = (t, e) = > {
+    }, n.d = (t, e) => {
         for (var r in e) n.o(e, r) && !n.o(t, r) && Object.defineProperty(t, r, {
             enumerable: !0,
             get: e[r]
@@ -11076,7 +11076,7 @@
         } catch (t) {
             if ("object" == typeof window) return window
         }
-    }(), n.o = (t, e) = > Object.prototype.hasOwnProperty.call(t, e), n.nmd = t = > (t.paths = [], t.children || (t.children = []), t), n.nc = void 0, (() = > {
+    }(), n.o = (t, e) => Object.prototype.hasOwnProperty.call(t, e), n.nmd = t => (t.paths = [], t.children || (t.children = []), t), n.nc = void 0, (() => {
         "use strict";
         var t = n(538),
             e = n(821),
